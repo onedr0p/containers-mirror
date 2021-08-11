@@ -39,6 +39,11 @@
     },
     {
       "matchDatasources": ["docker"],
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-amd64$",
+      "matchPackageNames": ["blakeblackshear/frigate"]
+    },
+    {
+      "matchDatasources": ["docker"],
       "automerge": true,
       "automergeType": "branch",
       "requiredStatusChecks": null,
@@ -50,7 +55,8 @@
         "docker.io/jellyfin/jellyfin",
         "docker.io/nodered/node-red",
         "docker.io/esanchezm/prometheus-qbittorrent-exporter",
-        "docker.io/golift/unifi-poller"
+        "docker.io/golift/unifi-poller",
+        "docker.io/blakeblackshear/frigate"
      ]
     }
   ]
