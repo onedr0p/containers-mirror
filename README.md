@@ -24,6 +24,14 @@ When upstream maintainers add support for an additional registry, the images her
 
 ## Contributing
 
+You can discover containers from Docker Hub by using the following command:
+
+```
+kubectl get pods --all-namespaces -o=jsonpath="{range .items[*]}{'\n'}{range .spec.containers[*]}{.image}{'\n'}{end}{end}" | sort | uniq | grep -Ev 'quay|gcr|ghcr|ecr' |  sed -e 's/docker\.io\///g' | sort | uniq
+```
+
+After you have determined some image you want to mirror, do the following:
+
 - If not already created, create an issue upstream asking for them to support an additional registry.
 - Open a PR adding a new application to the `apps` folder, update the `README.md` with the issue link, and then update `.github/renovate.json5` to auto merge it.
 - Remind us to make the image public after the PR is merged ;)
