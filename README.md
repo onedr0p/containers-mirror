@@ -8,6 +8,8 @@ This is to get around Docker Hub rate-limiting (100 pulls / 6 hours, 200 pulls /
 
 ## Supported images
 
+When upstream maintainers add support for an additional registry, the images here will be purged after awhile.
+
 | Name                                                                                            | Upstream Issue                                                                                                                                                                                     |
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [code-server](https://github.com/cdr/code-server)                                               | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/cdr/code-server/3335)](https://github.com/cdr/code-server/issues/3335)                                                   |
