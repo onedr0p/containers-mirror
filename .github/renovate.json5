@@ -57,7 +57,8 @@
         "docker.io/esanchezm/prometheus-qbittorrent-exporter",
         "docker.io/golift/unifi-poller",
         "docker.io/blakeblackshear/frigate",
-        "docker.io/library/traefik"
+        "docker.io/library/traefik",
+        "docker.io/grafana/grafana"
      ]
     }
   ]
