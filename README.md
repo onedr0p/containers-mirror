@@ -24,7 +24,7 @@ When upstream maintainers add support for an additional registry, the images her
 
 ## Contributing
 
-You can discover containers from Docker Hub by using the following command:
+You can discover containers running in your cluster from Docker Hub by using the following command:
 
 ```
 kubectl get pods --all-namespaces -o=jsonpath="{range .items[*]}{'\n'}{range .spec.containers[*]}{.image}{'\n'}{end}{end}" | sort | uniq | grep -Ev 'quay|gcr|ghcr|ecr' |  sed -e 's/docker\.io\///g' | sort | uniq
