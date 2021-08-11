@@ -59,7 +59,8 @@
         "docker.io/blakeblackshear/frigate",
         "docker.io/library/traefik",
         "docker.io/calico/node",
-        "docker.io/calico/kube-controllers"
+        "docker.io/calico/kube-controllers",
+        "docker.io/grafana/grafana"
      ]
     }
   ]
