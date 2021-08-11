@@ -25,6 +25,7 @@ When upstream maintainers add support for an additional registry, the images her
 | [grafana](https://github.com/grafana/grafana)                                                   | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/grafana/grafana/27677)](https://github.com/grafana/grafana/issues/27677)                                                 |
 | [loki](https://github.com/grafana/loki)                                                   | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/grafana/loki/4143)](https://github.com/grafana/loki/issues/4143)                                                 |
 | [reloader](https://github.com/stakater/Reloader)                                                   | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/stakater/Reloader/255)](https://github.com/stakater/Reloader/issues/255)                                                 |
+| [kured](https://github.com/weaveworks/kured)                                                   | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/weaveworks/kured/421)](https://github.com/weaveworks/kured/issues/421)                                                 |
 
 ## Contributing
 
