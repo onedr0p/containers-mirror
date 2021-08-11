@@ -63,7 +63,8 @@
         "docker.io/grafana/grafana",
         "docker.io/grafana/loki",
         "docker.io/grafana/promtail",
-        "docker.io/stakater/reloader"
+        "docker.io/stakater/reloader",
+        "docker.io/weaveworks/kured"
      ]
     }
   ]
