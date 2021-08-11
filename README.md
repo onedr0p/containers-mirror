@@ -24,6 +24,7 @@ When upstream maintainers add support for an additional registry, the images her
 | [calico](https://github.com/projectcalico/calico)                                               | [![Github issue status](https://img.shields.io/github/issues/detail/state/projectcalico/calico/4833)](https://github.com/projectcalico/calico/issues/4833)                                         |
 | [grafana](https://github.com/grafana/grafana)                                                   | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/grafana/grafana/27677)](https://github.com/grafana/grafana/issues/27677)                                                 |
 | [loki](https://github.com/grafana/loki)                                                   | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/grafana/loki/4143)](https://github.com/grafana/loki/issues/4143)                                                 |
+| [reloader](https://github.com/stakater/Reloader)                                                   | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/stakater/Reloader/255)](https://github.com/stakater/Reloader/issues/255)                                                 |
 
 ## Contributing
 
