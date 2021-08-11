@@ -49,7 +49,8 @@
         "docker.io/intel/intel-gpu-plugin",
         "docker.io/jellyfin/jellyfin",
         "docker.io/nodered/node-red",
-        "docker.io/esanchezm/prometheus-qbittorrent-exporter"
+        "docker.io/esanchezm/prometheus-qbittorrent-exporter",
+        "docker.io/golift/unifi-poller"
      ]
     }
   ]

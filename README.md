@@ -16,6 +16,7 @@ This is to get around Docker Hub rate-limiting (100 pulls / 6 hours, 200 pulls /
 | [jellyfin](https://github.com/jellyfin/jellyfin)                                                | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/jellyfin/jellyfin/6024)](https://github.com/jellyfin/jellyfin/issues/6024)                                               |
 | [node-red](https://github.com/node-red/node-red)                                                | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/node-red/node-red/3107)](https://github.com/node-red/node-red/issues/3107)                                               |
 | [prometheus-qbittorrent-exporter](https://github.com/esanchezm/prometheus-qbittorrent-exporter) | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/esanchezm/prometheus-qbittorrent-exporter/12)](https://github.com/esanchezm/prometheus-qbittorrent-exporter/issues/12)   |
+| [unpoller](https://github.com/unpoller/unpoller)                                                | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/unpoller/unpoller/368)](https://github.com/unpoller/unpoller/issues/368)                                                 |
 
 ## Contributing
 
