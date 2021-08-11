@@ -23,6 +23,7 @@ When upstream maintainers add support for an additional registry, the images her
 | [unpoller](https://github.com/unpoller/unpoller)                                                | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/unpoller/unpoller/368)](https://github.com/unpoller/unpoller/issues/368)                                                 |
 | [calico](https://github.com/projectcalico/calico)                                               | [![Github issue status](https://img.shields.io/github/issues/detail/state/projectcalico/calico/4833)](https://github.com/projectcalico/calico/issues/4833)                                         |
 | [grafana](https://github.com/grafana/grafana)                                                   | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/grafana/grafana/27677)](https://github.com/grafana/grafana/issues/27677)                                                 |
+| [loki](https://github.com/grafana/loki)                                                   | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/grafana/loki/4143)](https://github.com/grafana/loki/issues/4143)                                                 |
 
 ## Contributing
 
