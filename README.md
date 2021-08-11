@@ -4,7 +4,7 @@ Images are hosted on Github Container Registry [here](https://github.com/orgs/k8
 
 ## Purpose
 
-This is to get around Docker Hub rate-limiting (100 pulls / 6 hours, 200 pulls / 6 hours). It is considered a stop-gap until the maintainers of the applications below support a different Container Registry.
+This is to get around Docker Hub rate-limiting (100 pulls / 6 hours, or authenticated 200 pulls / 6 hours). It is considered a stop-gap until the maintainers of the applications below support a different Container Registry.
 
 ## Supported images
 
