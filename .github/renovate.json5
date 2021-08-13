@@ -64,7 +64,8 @@
         "docker.io/grafana/loki",
         "docker.io/grafana/promtail",
         "docker.io/stakater/reloader",
-        "docker.io/weaveworks/kured"
+        "docker.io/weaveworks/kured",
+        "docker.io/library/eclipse-mosquitto"
      ]
     }
   ]
