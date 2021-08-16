@@ -61,6 +61,7 @@
         "docker.io/calico/node",
         "docker.io/calico/kube-controllers",
         "docker.io/calico/typha",
+        "docker.io/calico/pod2daemon-flexvol",
         "docker.io/grafana/grafana",
         "docker.io/grafana/loki",
         "docker.io/grafana/promtail",
