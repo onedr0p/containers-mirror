@@ -67,7 +67,8 @@
         "docker.io/grafana/promtail",
         "docker.io/stakater/reloader",
         "docker.io/weaveworks/kured",
-        "docker.io/library/eclipse-mosquitto"
+        "docker.io/library/eclipse-mosquitto",
+        "docker.io/velero/velero"
      ]
     }
   ]
