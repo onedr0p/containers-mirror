@@ -69,7 +69,8 @@
         "docker.io/weaveworks/kured",
         "docker.io/library/eclipse-mosquitto",
         "docker.io/velero/velero",
-        "docker.io/velero/velero-plugin-for-aws"
+        "docker.io/velero/velero-plugin-for-aws",
+        "docker.io/vaultwarden/server"
      ]
     }
   ]
