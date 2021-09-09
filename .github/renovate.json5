@@ -50,7 +50,6 @@
       "matchUpdateTypes": ["major", "minor", "patch"],
       "matchPackageNames": [
         "docker.io/codercom/code-server",
-        "docker.io/tarampampam/error-pages",
         "docker.io/intel/intel-gpu-plugin",
         "docker.io/jellyfin/jellyfin",
         "docker.io/nodered/node-red",
@@ -58,10 +57,6 @@
         "docker.io/golift/unifi-poller",
         "docker.io/blakeblackshear/frigate",
         "docker.io/library/traefik",
-        "docker.io/calico/node",
-        "docker.io/calico/kube-controllers",
-        "docker.io/calico/typha",
-        "docker.io/calico/pod2daemon-flexvol",
         "docker.io/grafana/grafana",
         "docker.io/grafana/loki",
         "docker.io/grafana/promtail",
