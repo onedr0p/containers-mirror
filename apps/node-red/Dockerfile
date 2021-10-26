@@ -1,3 +1,3 @@
-FROM docker.io/nodered/node-red:2.1.2
+FROM docker.io/nodered/node-red:2.1.3
 
 LABEL "org.opencontainers.image.source"="https://github.com/k8s-at-home/container-images-mirror"
