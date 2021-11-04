@@ -50,7 +50,6 @@
       "matchUpdateTypes": ["major", "minor", "patch"],
       "matchPackageNames": [
         "docker.io/codercom/code-server",
-        "docker.io/intel/intel-gpu-plugin",
         "docker.io/jellyfin/jellyfin",
         "docker.io/nodered/node-red",
         "docker.io/esanchezm/prometheus-qbittorrent-exporter",
