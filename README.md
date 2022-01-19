@@ -24,6 +24,7 @@ When upstream maintainers add support for an additional registry, the images her
 | [reloader](https://github.com/stakater/Reloader)                                                | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/stakater/Reloader/255)](https://github.com/stakater/Reloader/issues/255)                                                 |
 | [eclipse-mosquitto](https://github.com/eclipse/mosquitto)                                       | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/eclipse/mosquitto/2279)](https://github.com/eclipse/mosquitto/issues/2279)                                               |
 | [velero](https://github.com/vmware-tanzu/velero)                                                | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/vmware-tanzu/velero/4106)](https://github.com/vmware-tanzu/velero/issues/2279)                                           |
+| [airsonic-advanced](https://github.com/airsonic-advanced/airsonic-advanced)                     | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/airsonic-advanced/airsonic-advanced/742)](https://github.com/airsonic-advanced/airsonic-advanced/issues/742)                                           |
 
 ## Contributing
 
