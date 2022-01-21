@@ -69,8 +69,9 @@
         "docker.io/velero/velero",
         "docker.io/velero/velero-plugin-for-aws",
         "docker.io/vaultwarden/server",
-        "docker.io/airsonicadvanced/airsonic-advanced"
-     ]
+        "docker.io/airsonicadvanced/airsonic-advanced",
+        "docker.io/rclone/rclone"
+      ]
     }
   ]
 }
