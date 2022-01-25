@@ -44,11 +44,6 @@
     },
     {
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["docker.io/airsonicadvanced/airsonic-advanced"],
-      "versioning": "regex:^edge-(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-SNAPSHOT\\.(?<build>\\d+)$"
-    },
-    {
-      "matchDatasources": ["docker"],
       "automerge": true,
       "automergeType": "branch",
       "requiredStatusChecks": null,
@@ -69,7 +64,6 @@
         "docker.io/velero/velero",
         "docker.io/velero/velero-plugin-for-aws",
         "docker.io/vaultwarden/server",
-        "docker.io/airsonicadvanced/airsonic-advanced",
         "docker.io/rclone/rclone"
       ]
     }
