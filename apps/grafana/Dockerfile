@@ -1,3 +1,3 @@
-FROM docker.io/grafana/grafana:8.5.3
+FROM docker.io/grafana/grafana:8.5.4
 
 LABEL "org.opencontainers.image.source"="https://github.com/k8s-at-home/container-images-mirror"
