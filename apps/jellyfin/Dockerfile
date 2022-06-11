@@ -1,3 +1,3 @@
-FROM docker.io/jellyfin/jellyfin:10.7.7
+FROM docker.io/jellyfin/jellyfin:10.8.0
 
 LABEL "org.opencontainers.image.source"="https://github.com/k8s-at-home/container-images-mirror"
