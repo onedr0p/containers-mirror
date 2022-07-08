@@ -1,3 +1,3 @@
-FROM docker.io/grafana/loki:2.5.0
+FROM docker.io/grafana/loki:2.6.0
 
 LABEL "org.opencontainers.image.source"="https://github.com/k8s-at-home/container-images-mirror"
