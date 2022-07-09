@@ -1,4 +1,4 @@
-FROM docker.io/rclone/rclone:1.58.1
+FROM docker.io/rclone/rclone:1.59.0
 
 RUN apk add --no-cache curl
 
