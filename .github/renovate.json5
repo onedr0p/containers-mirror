@@ -1,71 +1,67 @@
 {
-  "semanticCommits": "enabled",
-  "dependencyDashboard": true,
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    "docker:enableMajor",
+    ":disableRateLimiting",
+    ":dependencyDashboard",
+    ":semanticCommits",
+    ":enablePreCommit",
+    ":automergeDigest",
+    ":automergeBranch",
+    "helpers:pinGitHubActionDigests"
+  ],
+  "platform": "github",
+  "onboarding": false,
+  "requireConfig": "optional",
   "dependencyDashboardTitle": "Renovate Dashboard 🤖",
   "suppressNotifications": ["prIgnoreNotification"],
   "rebaseWhen": "conflicted",
-  "commitMessageTopic": "{{depName}}",
-  "commitMessageExtra": "to {{newVersion}}",
-  "commitMessageSuffix": "",
+  "commitBodyTable": true,
   "packageRules": [
     {
       "matchDatasources": ["docker"],
       "enabled": true,
-      "matchUpdateTypes": ["major", "minor", "patch"]
+      "matchUpdateTypes": ["major", "minor", "patch", "digest"]
     },
     {
       "matchDatasources": ["docker"],
-      "semanticCommitScope": "images",
+      "semanticCommitScope": "container",
       "separateMinorPatch": true
     },
-    // add labels according to package and update types
     {
       "matchDatasources": ["docker"],
       "matchUpdateTypes": ["major"],
-      "commitMessagePrefix": "feat(images)!: ",
-      "labels": ["renovate/image", "dep/major"]
+      "commitMessagePrefix": "feat(images)!: "
     },
     {
       "matchDatasources": ["docker"],
       "matchUpdateTypes": ["minor"],
-      "semanticCommitType": "feat",
-      "labels": ["renovate/image", "dep/minor"]
+      "semanticCommitType": "feat"
     },
     {
       "matchDatasources": ["docker"],
       "matchUpdateTypes": ["patch"],
-      "semanticCommitType": "fix",
-      "labels": ["renovate/image", "dep/patch"]
+      "semanticCommitType": "fix"
     },
     {
       "matchDatasources": ["docker"],
-      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-amd64$",
-      "matchPackageNames": ["blakeblackshear/frigate"]
+      "matchUpdateTypes": ["digest"],
+      "semanticCommitType": "chore"
     },
-    {
-      "matchDatasources": ["docker"],
-      "automerge": true,
-      "automergeType": "branch",
-      "requiredStatusChecks": null,
-      "matchUpdateTypes": ["major", "minor", "patch"],
-      "matchPackageNames": [
-        "docker.io/codercom/code-server",
-        "docker.io/jellyfin/jellyfin",
-        "docker.io/nodered/node-red",
-        "docker.io/esanchezm/prometheus-qbittorrent-exporter",
-        "docker.io/golift/unifi-poller",
-        "docker.io/blakeblackshear/frigate",
-        "docker.io/library/traefik",
-        "docker.io/grafana/grafana",
-        "docker.io/grafana/loki",
-        "docker.io/grafana/promtail",
-        "docker.io/stakater/reloader",
-        "docker.io/library/eclipse-mosquitto",
-        "docker.io/velero/velero",
-        "docker.io/velero/velero-plugin-for-aws",
-        "docker.io/vaultwarden/server",
-        "docker.io/rclone/rclone"
-      ]
-    }
+    // {
+    //   "description": "Auto merge container images",
+    //   "matchDatasources": ["docker"],
+    //   "automerge": true,
+    //   "automergeType": "branch",
+    //   "ignoreTests": true,
+    //   "matchUpdateTypes": ["major", "minor", "patch", "digest"],
+    //   "matchPackageNames": [
+    //     "docker.io/esanchezm/prometheus-qbittorrent-exporter",
+    //     "docker.io/grafana/grafana",
+    //     "docker.io/grafana/loki",
+    //     "docker.io/stakater/reloader"
+    //   ]
+    // }
   ]
 }
