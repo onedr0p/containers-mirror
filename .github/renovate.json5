@@ -32,7 +32,7 @@
     {
       "matchDatasources": ["docker"],
       "matchUpdateTypes": ["major"],
-      "commitMessagePrefix": "feat(images)!: "
+      "commitMessagePrefix": "feat(container)!: "
     },
     {
       "matchDatasources": ["docker"],
@@ -49,19 +49,22 @@
       "matchUpdateTypes": ["digest"],
       "semanticCommitType": "chore"
     },
-    // {
-    //   "description": "Auto merge container images",
-    //   "matchDatasources": ["docker"],
-    //   "automerge": true,
-    //   "automergeType": "branch",
-    //   "ignoreTests": true,
-    //   "matchUpdateTypes": ["major", "minor", "patch", "digest"],
-    //   "matchPackageNames": [
-    //     "docker.io/esanchezm/prometheus-qbittorrent-exporter",
-    //     "docker.io/grafana/grafana",
-    //     "docker.io/grafana/loki",
-    //     "docker.io/stakater/reloader"
-    //   ]
-    // }
+    {
+      "description": "Auto merge container images",
+      "matchDatasources": ["docker"],
+      "automerge": true,
+      "automergeType": "branch",
+      "ignoreTests": true,
+      "matchUpdateTypes": ["major", "minor", "patch", "digest"]
+    },
+    {
+      "description": "Auto merge GitHub Actions",
+      "matchManagers": ["github-actions"],
+      "matchDatasources": ["github-tags"],
+      "automerge": true,
+      "ignoreTests": true,
+      "automergeType": "branch",
+      "matchUpdateTypes": ["minor", "patch"]
+    }
   ]
 }
