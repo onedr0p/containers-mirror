@@ -27,7 +27,6 @@ jobs:
         uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3.3.0
         with:
           token: "${{ steps.generate-token.outputs.token }}"
-          fetch-depth: 0
 
       - name: Get changed files
         id: changed-files
@@ -62,10 +61,12 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          VERSION=$(head -1 ./apps/${{ matrix.container }}/Dockerfile | sed 's/^FROM.*://' )
-          echo ::set-output name=version::${VERSION}
-          PLATFORM=$(cat ./apps/${{ matrix.container }}/PLATFORM)
-          echo ::set-output name=platform::${PLATFORM}
+          CONTAINER_NAME=$(basename ${{ matrix.container }})
+          echo "container-name=$CONTAINER_NAME" >> "${GITHUB_OUTPUT}"
+          CONTAINER_VERSION=$(head -1 ./apps/$CONTAINER_NAME/Dockerfile | sed 's/^FROM.*://' )
+          echo "container-version=$CONTAINER_VERSION" >> "${GITHUB_OUTPUT}"
+          CONTAINER_PLATFORM=$(cat ./apps/$CONTAINER_NAME/PLATFORM)
+          echo "container-platform=$CONTAINER_PLATFORM" >> "${GITHUB_OUTPUT}"
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@e81a89b1732b9c48d79cd809d8d81d79c4647a18 # v2
@@ -83,10 +84,10 @@ jobs:
       - name: Build and Push
         uses: docker/build-push-action@37abcedcc1da61a57767b7588cb9d03eb57e28b3 # v3.3.0
         with:
-          build-args: VERSION=${{ steps.prep.outputs.version }}
+          build-args: VERSION=${{ steps.prep.outputs.container-version }}
           context: .
-          platforms: ${{ steps.prep.outputs.platform }}
-          file: ./apps/${{ matrix.container }}/Dockerfile
+          platforms: ${{ steps.prep.outputs.container-platform }}
+          file: ./apps/${{ steps.prep.outputs.container-name }}/Dockerfile
           push: true
           tags: |
-            ${{ env.IMAGE_REGISTRY }}/${{ github.repository_owner }}/${{ matrix.container }}-mirror:${{ steps.prep.outputs.version }}
+            ${{ env.IMAGE_REGISTRY }}/${{ github.repository_owner }}/${{ steps.prep.outputs.container-name }}-mirror:${{ steps.prep.outputs.version }}
