@@ -90,4 +90,4 @@ jobs:
           file: ./apps/${{ steps.prep.outputs.container-name }}/Dockerfile
           push: true
           tags: |
-            ${{ env.IMAGE_REGISTRY }}/${{ github.repository_owner }}/${{ steps.prep.outputs.container-name }}-mirror:${{ steps.prep.outputs.version }}
+            ${{ env.IMAGE_REGISTRY }}/${{ github.repository_owner }}/${{ steps.prep.outputs.container-name }}-mirror:${{ steps.prep.outputs.container-version }}
