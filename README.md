@@ -1,6 +1,6 @@
 # Container Images Mirror
 
-Images are hosted on Github Container Registry [here](https://github.com/onedr0p?ecosystem=container&tab=packages).
+Stop-gap container registry mirror of upstream applications that only use Docker Hub
 
 ## Purpose
 
@@ -20,6 +20,7 @@ When upstream maintainers add support for an additional registry, the images her
 | [grafana/loki](https://github.com/grafana/loki)                                                           | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/grafana/loki/4143)](https://github.com/grafana/loki/issues/4143)                                                       |
 | [maxmind/geoipupdate](https://github.com/maxmind/geoipupdate) | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/maxmind/geoipupdate/202)](https://github.com/maxmind/geoipupdate/issues/202) |
 | [stakater/Reloader](https://github.com/stakater/Reloader)                                                 | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/stakater/Reloader/255)](https://github.com/stakater/Reloader/issues/255)                                               |
+| [vectordotdev/vector](https://github.com/vectordotdev/vector)                                                 | [![GitHub issue status](https://img.shields.io/github/issues/detail/state/vectordotdev/vector/6715)](https://github.com/vectordotdev/vector/issues/6715)                                               |
 
 ## Docker OSS Program
 
