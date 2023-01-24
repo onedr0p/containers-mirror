@@ -61,12 +61,18 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          CONTAINER_NAME=$(basename ${{ matrix.container }})
-          echo "container-name=$CONTAINER_NAME" >> "${GITHUB_OUTPUT}"
-          CONTAINER_VERSION=$(head -1 ./apps/$CONTAINER_NAME/Dockerfile | sed 's/^FROM.*://' )
-          echo "container-version=$CONTAINER_VERSION" >> "${GITHUB_OUTPUT}"
-          CONTAINER_PLATFORM=$(cat ./apps/$CONTAINER_NAME/PLATFORM)
-          echo "container-platform=$CONTAINER_PLATFORM" >> "${GITHUB_OUTPUT}"
+          container_name=$(basename ${{ matrix.container }})
+          echo "container-name=${container_name}" >> "${GITHUB_OUTPUT}"
+
+          container_image=$(head -1 ./apps/${container_name}/Dockerfile | sed 's/^FROM //')
+          container_version=$(cut -d':' -f2 <<< "${container_image}")
+          if [[ "${container_image}" == *sha256 ]]; then
+              container_version=$(cut -d'@' -f1 <<< "${container_version}")
+          fi
+          echo "container-version=${container_version}" >> "${GITHUB_OUTPUT}"
+
+          container_platform=$(cat ./apps/${container_name}/PLATFORM)
+          echo "container-platform=${container_platform}" >> "${GITHUB_OUTPUT}"
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@e81a89b1732b9c48d79cd809d8d81d79c4647a18 # v2
