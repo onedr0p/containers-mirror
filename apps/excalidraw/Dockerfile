@@ -1,1 +1,1 @@
-FROM docker.io/excalidraw/excalidraw:latest@sha256:772c98368d7dc0a8f1e82b387382609676bbd789dcb0faf95eabcab6e138cb09
+FROM docker.io/excalidraw/excalidraw:latest@sha256:cc2d510aab638b516f8ce50108981115348ea19e58915fbbef3c790dcc34ac92
