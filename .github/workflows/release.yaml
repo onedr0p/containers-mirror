@@ -30,7 +30,7 @@ jobs:
 
       - name: Get changed files
         id: changed-files
-        uses: tj-actions/changed-files@3a3ec498d8976e74f5dd829c413c1d446e738df7 # v35.7.5
+        uses: tj-actions/changed-files@07f86bcdc42639264ec561c7f175fea5f532b6ce # v35.7.6
         with:
           dir_names: true
           dir_names_max_depth: 2
