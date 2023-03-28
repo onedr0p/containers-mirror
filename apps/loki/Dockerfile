@@ -1,1 +1,1 @@
-FROM docker.io/grafana/loki:2.7.4
+FROM docker.io/grafana/loki:2.7.5
