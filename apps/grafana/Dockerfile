@@ -1,1 +1,1 @@
-FROM docker.io/grafana/grafana:10.0.0
+FROM docker.io/grafana/grafana:10.0.1
